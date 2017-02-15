@@ -1,4 +1,25 @@
-﻿Public Class Student
+﻿'-                File Name : student.vb                    - 
+'-                Part of Project: Assignment 5             - 
+'------------------------------------------------------------Private
+'-                Written By: Trent Killinger               - 
+'-                Written On: 2-8-17                        - 
+'------------------------------------------------------------ 
+'- File Purpose:                                            - 
+'-                                                          - 
+'- This file contains the deffinition for the student class -
+'------------------------------------------------------------
+'- Variable Dictionary                                      - 
+'- _initials - student initials                             -
+'- _lastName - student last name                            -
+'- _homework1 - student hw1 score                           -
+'- _homework2 - student hw2 score                           -
+'- _homework3 - student hw3 score                           -
+'- _homework4 - student hw4 score                           -
+'- _examScore - student exam score                          -
+'- _numericGrade - student grade in numeric form            -
+'- _letterGrade - student grade in letter form              -
+'------------------------------------------------------------
+Public Class Student
     Private _initials As String
     Private _lastName As String
     Private _homework1 As Single
@@ -9,6 +30,28 @@
     Private _numericGrade As Single
     Private _letterGrade As String
 
+    '------------------------------------------------------------ 
+    '-                Subprogram Name: New                      - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-8-17                        - 
+    '------------------------------------------------------------
+    '- Subprogram Purpose:                                      - 
+    '-                                                          - 
+    '- This subroutine sets the data members values             -
+    '------------------------------------------------------------ 
+    '- Parameter Dictionary:                                    - 
+    '- initials - student initials                              -
+    '- lastName - student last name                             -
+    '- homework1 - student hw1 score                            -
+    '- homework2 - student hw2 score                            -
+    '- homework3 - student hw3 score                            -
+    '- homework4 - student hw4 score                            -
+    '- examScore - student exam score                           -
+    '------------------------------------------------------------ 
+    '- Local Variable Dictionary:                               - 
+    '- (None)                                                   -
+    '------------------------------------------------------------
     Public Sub New(initials As String,
                    lastName As String,
                    homework1 As Single,
@@ -27,19 +70,42 @@
         CalculateLetterGrade()
     End Sub
 
-    Public Sub New()
-        _initials = ""
-        _lastName = ""
-        _homework1 = 0
-        _homework2 = 0
-        _homework3 = 0
-        _homework4 = 0
-    End Sub
-
+    '------------------------------------------------------------ 
+    '-                Subprogram Name: CalculateNumericGrade    - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-8-17                        - 
+    '------------------------------------------------------------
+    '- Subprogram Purpose:                                      - 
+    '-                                                          - 
+    '- This subroutine calculates student's numeric grade       -
+    '------------------------------------------------------------ 
+    '- Parameter Dictionary:                                    - 
+    '- (None)                                                   -
+    '------------------------------------------------------------ 
+    '- Local Variable Dictionary:                               - 
+    '- (None)                                                   -
+    '------------------------------------------------------------
     Public Sub CalculateNumericGrade()
         _numericGrade = ((_homework1 + _homework2 + _homework3 + _homework4) * 0.5) + ((_examScore) * 0.5)
     End Sub
 
+    '------------------------------------------------------------ 
+    '-                Subprogram Name: CalculateLetterGrade     - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-8-17                        - 
+    '------------------------------------------------------------
+    '- Subprogram Purpose:                                      - 
+    '-                                                          - 
+    '- This subroutine calculates student's letter grade        -
+    '------------------------------------------------------------ 
+    '- Parameter Dictionary:                                    - 
+    '- (None)                                                   -
+    '------------------------------------------------------------ 
+    '- Local Variable Dictionary:                               - 
+    '- (None)                                                   -
+    '------------------------------------------------------------
     Public Sub CalculateLetterGrade()
         If (_numericGrade >= 95) Then
             _letterGrade = "A"
@@ -68,6 +134,16 @@
         End If
     End Sub
 
+    '------------------------------------------------------------ 
+    '-                Property Name: Initials                   - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-1-17                        - 
+    '------------------------------------------------------------
+    '- Property Purpose:                                        - 
+    '-                                                          - 
+    '- This Property sets/gets the Initials                     -
+    '------------------------------------------------------------ 
     Public Property Initials() As String
         Get
             Return _initials
@@ -77,6 +153,16 @@
         End Set
     End Property
 
+    '------------------------------------------------------------ 
+    '-                Property Name: LastName                   - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-1-17                        - 
+    '------------------------------------------------------------
+    '- Property Purpose:                                        - 
+    '-                                                          - 
+    '- This Property sets/gets the LastName                     -
+    '------------------------------------------------------------ 
     Public Property LastName() As String
         Get
             Return _lastName
@@ -86,6 +172,16 @@
         End Set
     End Property
 
+    '------------------------------------------------------------ 
+    '-                Property Name: Homework1                  - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-1-17                        - 
+    '------------------------------------------------------------
+    '- Property Purpose:                                        - 
+    '-                                                          - 
+    '- This Property sets/gets the Homework1                    -
+    '------------------------------------------------------------ 
     Public Property Homework1() As Single
         Get
             Return _homework1
@@ -95,6 +191,16 @@
         End Set
     End Property
 
+    '------------------------------------------------------------ 
+    '-                Property Name: Homework2                  - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-1-17                        - 
+    '------------------------------------------------------------
+    '- Property Purpose:                                        - 
+    '-                                                          - 
+    '- This Property sets/gets the Homework2                    -
+    '------------------------------------------------------------ 
     Public Property Homework2() As Single
         Get
             Return _homework2
@@ -104,6 +210,16 @@
         End Set
     End Property
 
+    '------------------------------------------------------------ 
+    '-                Property Name: Homework3                  - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-1-17                        - 
+    '------------------------------------------------------------
+    '- Property Purpose:                                        - 
+    '-                                                          - 
+    '- This Property sets/gets the Homework3                    -
+    '------------------------------------------------------------ 
     Public Property Homework3() As Single
         Get
             Return _homework3
@@ -113,6 +229,16 @@
         End Set
     End Property
 
+    '------------------------------------------------------------ 
+    '-                Property Name: Homework4                  - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-1-17                        - 
+    '------------------------------------------------------------
+    '- Property Purpose:                                        - 
+    '-                                                          - 
+    '- This Property sets/gets the Homework4                    -
+    '------------------------------------------------------------ 
     Public Property Homework4() As Single
         Get
             Return _homework4
@@ -122,6 +248,16 @@
         End Set
     End Property
 
+    '------------------------------------------------------------ 
+    '-                Property Name: ExamScore                  - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-1-17                        - 
+    '------------------------------------------------------------
+    '- Property Purpose:                                        - 
+    '-                                                          - 
+    '- This Property sets/gets the ExamScore                    -
+    '------------------------------------------------------------ 
     Public Property ExamScore() As Single
         Get
             Return _examScore
@@ -131,21 +267,35 @@
         End Set
     End Property
 
-    Public Property NumericGrade() As Single
+    '------------------------------------------------------------ 
+    '-                Property Name: NumericGrade               - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-1-17                        - 
+    '------------------------------------------------------------
+    '- Property Purpose:                                        - 
+    '-                                                          - 
+    '- This Property gets the NumericGrade                      -
+    '------------------------------------------------------------
+    Public ReadOnly Property NumericGrade() As Single
         Get
             Return _numericGrade
         End Get
-        Set(ByVal value As Single)
-            _numericGrade = value
-        End Set
     End Property
 
-    Public Property LetterGrade() As String
+    '------------------------------------------------------------ 
+    '-                Property Name: LetterGrade                - 
+    '------------------------------------------------------------
+    '-                Written By: Trent Killinger               - 
+    '-                Written On: 2-1-17                        - 
+    '------------------------------------------------------------
+    '- Property Purpose:                                        - 
+    '-                                                          - 
+    '- This Property gets the LetterGrade                       -
+    '------------------------------------------------------------
+    Public ReadOnly Property LetterGrade() As String
         Get
             Return _letterGrade
         End Get
-        Set(ByVal value As String)
-            _letterGrade = value
-        End Set
     End Property
 End Class

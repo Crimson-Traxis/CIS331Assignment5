@@ -1,0 +1,10 @@
+c:\users\trent\documents\visual studio 2017\Projects\CIS311Assignment5\CIS311Assignment5\bin\Debug\CIS311Assignment5.exe.config
+c:\users\trent\documents\visual studio 2017\Projects\CIS311Assignment5\CIS311Assignment5\bin\Debug\CIS311Assignment5.exe
+c:\users\trent\documents\visual studio 2017\Projects\CIS311Assignment5\CIS311Assignment5\bin\Debug\CIS311Assignment5.pdb
+c:\users\trent\documents\visual studio 2017\Projects\CIS311Assignment5\CIS311Assignment5\bin\Debug\CIS311Assignment5.xml
+c:\users\trent\documents\visual studio 2017\Projects\CIS311Assignment5\CIS311Assignment5\obj\Debug\CIS311Assignment5.vbprojResolveAssemblyReference.cache
+c:\users\trent\documents\visual studio 2017\Projects\CIS311Assignment5\CIS311Assignment5\obj\Debug\CIS311Assignment5.Resources.resources
+c:\users\trent\documents\visual studio 2017\Projects\CIS311Assignment5\CIS311Assignment5\obj\Debug\CIS311Assignment5.vbproj.GenerateResource.Cache
+c:\users\trent\documents\visual studio 2017\Projects\CIS311Assignment5\CIS311Assignment5\obj\Debug\CIS311Assignment5.exe
+c:\users\trent\documents\visual studio 2017\Projects\CIS311Assignment5\CIS311Assignment5\obj\Debug\CIS311Assignment5.xml
+c:\users\trent\documents\visual studio 2017\Projects\CIS311Assignment5\CIS311Assignment5\obj\Debug\CIS311Assignment5.pdb
